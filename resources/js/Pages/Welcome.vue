@@ -57,7 +57,7 @@ onMounted(() => {
 <template>
     <Layout>
         <div class="home-container">
-            <Head title="Home - bjacobin3d" />
+            <Head title="Home" />
 
             <div>
                 <h1 class="home__head">Brent Linville</h1>

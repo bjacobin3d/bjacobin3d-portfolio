@@ -19,7 +19,7 @@ onMounted(() => {
 <template>
     <Layout>
         <div class="portfolio-container">
-            <Head title="Portfolio - bjacobin3d" />
+            <Head title="Portfolio" />
 
             <div>
                 <div class="portfolio__list" v-if="portfolioItems.length">

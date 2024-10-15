@@ -27,7 +27,7 @@ onMounted(() => {
 <template>
     <Layout>
         <div class="portfolio-container">
-            <Head title="Portfolio - bjacobin3d" />
+            <Head title="Portfolio" />
 
             <div>
                 <h1 class="portfolio-content__title">{{ portfolioItem.name }}</h1>

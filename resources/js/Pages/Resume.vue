@@ -21,7 +21,7 @@ onMounted(() => {
 <template>
   <Layout>
     <div class="resume-container">
-      <Head title="Resume - bjacobin3d" />
+      <Head title="Resume" />
 
       <section data-element="fade-container">
         <h1 class="resume__heading" data-element="fade-in-up">Job History</h1>

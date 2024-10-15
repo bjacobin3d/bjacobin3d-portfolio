@@ -16,7 +16,7 @@ onMounted(() => {
 <template>
     <Layout>
         <div class="about-container">
-            <Head title="About - bjacobin3d" />
+            <Head title="About" />
 
             <div>
                 <p class="about__text" data-animate="color">
