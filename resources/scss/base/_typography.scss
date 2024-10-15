@@ -1,0 +1,80 @@
+// Import variables
+@import '../abstracts/variables';
+
+// Base font settings
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: var(--font-primary), sans-serif;  // Use CSS variable for font
+    font-weight: 300;
+    line-height: 1.6;
+    color: var(--text-color);  // Use CSS variable for color
+    background-color: var(--background-color);  // Use CSS variable for background color
+}
+
+// Headings
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-primary), sans-serif;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+    color: var(--heading-color);
+}
+
+h1 { font-size: 2.5rem; }
+h2 { font-size: 2rem; }
+h3 { font-size: 1.75rem; }
+h4 { font-size: 1.5rem; }
+h5 { font-size: 1.25rem; }
+h6 { font-size: 1rem; }
+
+// Paragraphs
+p {
+    font-family: var(--font-secondary), sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+// Links
+a {
+    font-family: var(--font-primary), sans-serif;
+    font-weight: 400;
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+
+    &:hover {
+        color: var(--link-hover-color);  // Use CSS hover variable
+    }
+}
+
+// Blockquotes
+blockquote {
+    font-family: var(--font-secondary), sans-serif;
+    font-style: italic;
+    border-left: 4px solid var(--border-color);
+    padding-left: 1rem;
+    color: var(--muted-text-color);
+    margin: 2rem 0;
+}
+
+// Small Text
+small {
+    font-family: var(--font-secondary), sans-serif;
+    font-size: 0.875rem;
+}
+
+// Lists
+ul, ol {
+    font-family: var(--font-secondary), sans-serif;
+    margin-left: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.text-colorful-heading {
+    color: var(--heading-color-bright);
+    font-weight: 900;
+}

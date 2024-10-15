@@ -1,0 +1,25 @@
+// Import variables
+@import '../abstracts/variables';
+
+html,
+body,
+#app,
+.container {
+  height: 100%;
+}
+
+body {
+  background-color: var(--background-color);
+}
+
+.site-wrapper {
+  padding-bottom: 300px;
+}
+
+[data-element="fade-container"],
+[data-element="fade-load-reveal"] {
+  [data-element="fade-in-up"] {
+      opacity: 0.01;
+      transform: translateY(32px);
+  }
+}

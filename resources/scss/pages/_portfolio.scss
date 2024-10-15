@@ -1,0 +1,72 @@
+@import '../abstracts/variables';
+@import '../abstracts/media';
+
+.portfolio-container {
+  height: 100%;
+  padding: var(--home-padding);
+  max-width: 900px;
+}
+
+.portfolio__list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 32px 16px;
+
+  @include respond-to('md') {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.portfolio-item__image {
+  margin-bottom: 16px;
+}
+
+.portfolio-content__title {
+  color: var(--heading-color-bright);
+}
+
+.portfolio-content__date {
+  margin-bottom: 36px;
+}
+
+.portfolio-content__figure {
+  margin-bottom: 16px;
+
+  img {
+    margin-bottom: 8px;
+  }
+
+  figcaption {
+    font-style: italic;
+  }
+}
+
+code {
+  font-family: monospace;
+  background: #1b1b1b;
+  color: #72e0d1;
+  word-wrap: break-word;
+  box-decoration-break: clone;
+  padding: 16px;
+  border-radius: .2rem;
+  display: block;
+  // background: none;
+  // white-space: pre;
+  -webkit-overflow-scrolling: touch;
+  overflow-x: scroll;
+  max-width: 100%;
+  min-width: 100px;
+
+  &.inline-code {
+      background: var(--pill-background-color);
+      color: var(--color-white);
+      display: inline;
+      font-weight: 700;
+      max-width: auto;
+      min-width: auto;
+      -webkit-overflow-scrolling: none;
+      overflow-x: auto;
+      padding: 0 10px;
+      white-space: pre-wrap;
+  }
+}

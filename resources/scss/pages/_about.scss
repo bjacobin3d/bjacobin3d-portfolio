@@ -1,0 +1,13 @@
+@import '../abstracts/flex';
+@import '../abstracts/variables';
+
+.about-container {
+  @include flex(column, wrap, center, left);
+  height: 100%;
+  padding: var(--home-padding);
+}
+
+.about__text {
+  font-size: 1.2rem;
+  max-width: 900px;
+}

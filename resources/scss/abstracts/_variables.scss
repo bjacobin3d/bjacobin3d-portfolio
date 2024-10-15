@@ -1,0 +1,48 @@
+@use "sass:color";
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;&family=Roboto:wght@400&display=swap');
+
+// SCSS Color palette (for internal SCSS use)
+$primary-color: #3490dc;
+$secondary-color: #ffdd57;
+$background-color: #2e3047;
+$text-color: #9ba0b3;
+$heading-color: #{$text-color};
+$heading-color-bright: #3bba9c;
+$muted-text-color: #555;
+$border-color: #ddd;
+$link-color: #3bba9c;
+$pill-background-color: #3bba9c;
+$link-hover-color: color.scale($primary-color, $lightness: -10%);
+$color-white: #{#FFFFFF};
+$color-black: #{#000000};
+
+// Font variables
+$font-primary: 'Raleway', sans-serif;
+$font-secondary: 'Roboto', sans-serif;
+
+// Spacing
+$home-padding: 50px;
+
+// Define CSS variables with SCSS values
+:root {
+    --primary-color: #{$primary-color};
+    --secondary-color: #{$secondary-color};
+    --background-color: #{$background-color};
+    --text-color: #{$text-color};
+    --heading-color: #{$heading-color};
+    --heading-color-bright: #{$heading-color-bright};
+    --muted-text-color: #{$muted-text-color};
+    --border-color: #{$border-color};
+    --link-hover-color: #{$link-color};
+    --link-color: #{$link-color};
+    --font-primary: #{$font-primary};
+    --font-secondary: #{$font-secondary};
+    --home-padding: #{$home-padding};
+    --pill-background-color: #{$pill-background-color};
+    --color-white: #{$color-white};
+    --color-black: #{$color-black};  
+}
+
+.theme-light {
+    --background-color: #{$primary-color};
+}

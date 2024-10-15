@@ -1,0 +1,45 @@
+@import '../abstracts/flex';
+@import '../abstracts/variables';
+
+.resume-container {
+  height: 100%;
+  padding: var(--home-padding);
+  max-width: 900px;
+}
+
+.resume__list-item {
+  background-color: var(--pill-background-color);
+  border-radius: 10px;
+  color: var(--color-white);
+  display: inline-block;
+  font-weight: 700;
+  margin: 0 12px 12px 0;
+  padding: 10px 16px;
+}
+
+.resume__heading {
+  font-size: 1.6rem;
+}
+
+.resume__job-title,
+.resume__company,
+.resume__dates {
+  color: var(--heading-color-bright);
+  font-weight: 700;
+}
+
+.resume__job-title {
+  font-size: 1.3rem;
+}
+
+.resume__dates {
+  font-weight: 300;
+  font-size: 1rem;
+  font-style: italic;
+}
+
+.resume__job-detail {
+  font-size: 1.1rem;
+  list-style-type: "🖖";
+  padding-inline-start: 1ch;
+}

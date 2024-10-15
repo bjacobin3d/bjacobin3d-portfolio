@@ -1,0 +1,17 @@
+@import '../abstracts/flex';
+@import '../abstracts/variables';
+
+.home-container {
+  @include flex(column, wrap, center, left);
+  height: 100%;
+  padding: var(--home-padding);
+}
+
+.home__head {
+  padding-top: 100px;
+}
+
+.home__subhead {
+  font-size: 1.8rem;
+  margin-bottom: 0;
+}

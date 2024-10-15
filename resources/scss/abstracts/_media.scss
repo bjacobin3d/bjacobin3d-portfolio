@@ -1,0 +1,33 @@
+// Breakpoints
+$breakpoint-xs: 0; // Extra small devices (phones, less than 576px)
+$breakpoint-sm: 576px; // Small devices (landscape phones, 576px and up)
+$breakpoint-md: 768px; // Medium devices (tablets, 768px and up)
+$breakpoint-lg: 992px; // Large devices (desktops, 992px and up)
+$breakpoint-xl: 1200px; // Extra large devices (large desktops, 1200px and up)
+
+// Mixin for media queries
+@mixin respond-to($breakpoint) {
+    @if $breakpoint == xs {
+        @media (max-width: #{$breakpoint-xs}) {
+            @content;
+        }
+    } @else if $breakpoint == sm {
+        @media (min-width: #{$breakpoint-sm}) {
+            @content;
+        }
+    } @else if $breakpoint == md {
+        @media (min-width: #{$breakpoint-md}) {
+            @content;
+        }
+    } @else if $breakpoint == lg {
+        @media (min-width: #{$breakpoint-lg}) {
+            @content;
+        }
+    } @else if $breakpoint == xl {
+        @media (min-width: #{$breakpoint-xl}) {
+            @content;
+        }
+    } @else {
+        @warn "No matching breakpoint for `#{$breakpoint}`.";
+    }
+}
