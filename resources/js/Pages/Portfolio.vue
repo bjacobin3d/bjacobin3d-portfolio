@@ -14,6 +14,14 @@ onMounted(() => {
     scrollReveal();
   })
 });
+
+const formattedDate = (date) => {
+    return new Date(date).toLocaleDateString('en-US', {
+        year: 'numeric',
+        month: 'long',
+        day: 'numeric'
+    });
+};
 </script>
 
 <template>
@@ -32,6 +40,7 @@ onMounted(() => {
                         <article class="portfolio-item" data-element="fade-in-up">
                             <img :src="portfolioItem.image" :alt="portfolioItem.name" class="portfolio-item__image">
                             <div>{{ portfolioItem.name }}</div>
+                            <div class="portfolio-item__date">{{ formattedDate(portfolioItem.published_at) }}</div>
                         </article>
                     </Link>
                 </div>

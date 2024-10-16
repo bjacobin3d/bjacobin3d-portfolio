@@ -32,6 +32,12 @@
   margin-bottom: 16px;
 }
 
+.portfolio-item__date {
+  color: var(--text-color);
+  font-style: italic;
+  font-size: 0.9rem;
+}
+
 .portfolio-content__title {
   color: var(--heading-color-bright);
 }
