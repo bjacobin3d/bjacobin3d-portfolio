@@ -5,6 +5,10 @@
   height: 100%;
   padding: var(--home-padding);
   max-width: 900px;
+
+  a {
+    color: var(--link-color);
+  }
 }
 
 .portfolio__list {
@@ -14,6 +18,13 @@
 
   @include respond-to('md') {
     grid-template-columns: 1fr 1fr;
+  }
+
+  a {
+    color: var(--link-color);
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    display: inline-block;
   }
 }
 
@@ -39,6 +50,10 @@
   figcaption {
     font-style: italic;
   }
+}
+
+.portfolio-content__cta {
+  color: var(--link-color);
 }
 
 code {
