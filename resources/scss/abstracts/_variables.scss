@@ -1,4 +1,5 @@
 @use "sass:color";
+@import '../abstracts/media';
 
 // SCSS Color palette (for internal SCSS use)
 $primary-color: #3490dc;
@@ -21,6 +22,7 @@ $font-secondary: 'Roboto', sans-serif;
 
 // Spacing
 $home-padding: 50px;
+$home-padding-small: 20px;
 
 // Define CSS variables with SCSS values
 :root {
@@ -36,10 +38,14 @@ $home-padding: 50px;
     --link-color: #{$link-color};
     --font-primary: #{$font-primary};
     --font-secondary: #{$font-secondary};
-    --home-padding: #{$home-padding};
+    --home-padding: #{$home-padding-small};
     --pill-background-color: #{$pill-background-color};
     --color-white: #{$color-white};
-    --color-black: #{$color-black};  
+    --color-black: #{$color-black};
+    
+    @include respond-to('md') {
+        --home-padding: #{$home-padding};
+    }
 }
 
 .theme-light {
